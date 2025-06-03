@@ -7,7 +7,6 @@ base_url = "https://front.serverest.dev/login"
 
 @given("estou na página de login")
 def step_impl(context):
-    context.driver = webdriver.Chrome()
     context.driver.get(base_url)
 
 @when("eu clico em Cadastre-se")
