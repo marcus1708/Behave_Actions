@@ -45,4 +45,9 @@ def step_impl(context):
     context.driver.get('https://front.serverest.dev/admin/home')
     context.driver.find_element(By.XPATH, '//*[@id="navbarTogglerDemo01"]/ul/li[3]/a').click()
     wait = WebDriverWait(context.driver, 10)
-    
+
+@then('os produtos sao exibidos')
+def step_impl(context):
+    context.driver.get('https://front.serverest.dev/admin/home')
+    context.driver.find_element(By.XPATH, '//*[@id="navbarTogglerDemo01"]/ul/li[5]/a').click()
+    wait = WebDriverWait(context.driver, 10)

@@ -13,3 +13,7 @@ Feature: Autom Web no Serverest
     Given estou na página de login
     When eu realizo login com email "qa@qa.io" e senha "123"
     Then os usuarios sao exibidos
+
+    Given estou na página de login
+    When eu realizo login com email "qa@qa.io" e senha "123"
+    Then os produtos sao exibidos
