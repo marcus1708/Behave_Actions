@@ -10,4 +10,6 @@ Feature: Autom Web no Serverest
     When eu realizo login com email "qa@qa.io" e senha "123"
     Then o usuario é logado com sucesso
 
-    
+    Given estou na página de login
+    When eu realizo login com email "qa@qa.io" e senha "123"
+    Then os usuarios sao exibidos
