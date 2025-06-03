@@ -1,4 +1,4 @@
-name: Testes CRUD Serverest com Behave
+name: Testes CRUD Serverest e Web com Behave
 
 on:
   push:
@@ -24,5 +24,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Executar testes Behave
-      run: behave
+    - name: Executar testes Behave API
+      run: behave features/api
+
+    - name: Executar testes Behave Web
+      run: behave features/web
